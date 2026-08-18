@@ -1,0 +1,168 @@
+{
+  "generatedAt": "2026-08-18",
+  "policy": {
+    "productionRule": "Do not publish copied commercial dictionary definitions, examples, audio, or article structure.",
+    "allowedUse": "Use selected dictionaries as internal references for reading, pitch accent, part of speech, meaning keywords, and editorial confidence.",
+    "exampleRule": "All Japanese examples and Chinese translations must be newly written and reviewed."
+  },
+  "selected": [
+    {
+      "id": "nhk-accent",
+      "tier": "S",
+      "purpose": "pitch_accent_primary",
+      "path": "NHK日本語発音アクセント新辞典/NHK日本語発音アクセント新辞典.mdx",
+      "title": "NHK日本語発音アクセント新辞典",
+      "useFields": ["reading", "pitch_accent", "accent_pattern"],
+      "doNotPublish": ["raw_definition", "raw_examples", "audio", "screenshots"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Best first source for pitch accent. Use as reference only unless redistribution rights are confirmed."
+    },
+    {
+      "id": "jmdict",
+      "tier": "S",
+      "purpose": "base_lexeme_reference",
+      "path": "[其他语种] ◆日英英日双向辞典【匿名原创】【版本日期未注明】.mdx",
+      "title": "JMDict",
+      "useFields": ["word", "reading", "part_of_speech", "english_gloss_keywords"],
+      "doNotPublish": ["local_mdx_article_html"],
+      "licenseStatus": "license_check_required",
+      "notes": "Good base reference if EDRDG attribution/licence requirements are satisfied. Prefer official JMdict data for production imports."
+    },
+    {
+      "id": "daijirin4",
+      "tier": "S",
+      "purpose": "japanese_sense_reference",
+      "path": "daijirin2.mdx",
+      "title": "大辞林 第四版",
+      "useFields": ["reading", "part_of_speech", "sense_keywords"],
+      "doNotPublish": ["raw_definition", "raw_examples", "article_structure"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Use to understand Japanese sense boundaries and avoid wrong Chinese simplification."
+    },
+    {
+      "id": "shinmeikai8",
+      "tier": "S",
+      "purpose": "japanese_nuance_reference",
+      "path": "smk8.mdx",
+      "title": "新明解国語辞典 第八版",
+      "useFields": ["part_of_speech", "sense_keywords", "usage_nuance"],
+      "doNotPublish": ["raw_definition", "raw_examples", "article_structure"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Useful for nuance and natural Japanese interpretation. Do not copy wording."
+    },
+    {
+      "id": "new-century-jp-zh",
+      "tier": "A",
+      "purpose": "chinese_meaning_keywords_primary",
+      "path": "新世纪日汉双解/xsjrihanshuangjie.mdx",
+      "title": "新世纪日汉双解大辞典",
+      "useFields": ["meaning_keywords", "part_of_speech_hint"],
+      "doNotPublish": ["raw_definition", "raw_examples", "article_structure"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Strong Chinese keyword reference. Final Chinese meaning must be rewritten."
+    },
+    {
+      "id": "jp-zh-20231101",
+      "tier": "A",
+      "purpose": "chinese_meaning_keywords_secondary",
+      "path": "日汉双解词典_20231101/日汉双解词典_20231101.mdx",
+      "title": "日汉双解词典 20231101",
+      "useFields": ["meaning_keywords"],
+      "doNotPublish": ["raw_definition", "raw_examples"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Use to cross-check Chinese keywords and detect outlier translations."
+    },
+    {
+      "id": "jp-verb-dictionary",
+      "tier": "A",
+      "purpose": "verb_conjugation_reference",
+      "path": "日本語動詞辞典.mdx",
+      "title": "日本語動詞辞典",
+      "useFields": ["part_of_speech", "verb_group", "conjugation_hint"],
+      "doNotPublish": ["raw_definition", "raw_examples"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Use for verbs only, especially godan/ichidan/suru classification."
+    },
+    {
+      "id": "jitsuyo-expression",
+      "tier": "A",
+      "purpose": "expression_usage_reference",
+      "path": "実用日本語表現辞典.mdx",
+      "title": "実用日本語表現辞典",
+      "useFields": ["expression_keywords", "usage_domain"],
+      "doNotPublish": ["raw_definition", "raw_examples"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Useful for fixed expressions and phrase-like vocabulary."
+    },
+    {
+      "id": "sentence-pattern-expression",
+      "tier": "B",
+      "purpose": "grammar_pattern_cross_reference",
+      "path": "日本語表現文型辞典.mdx",
+      "title": "日本語表現文型辞典",
+      "useFields": ["grammar_pattern_hint", "usage_domain"],
+      "doNotPublish": ["raw_definition", "raw_examples"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Use when a word behaves like a grammar expression or collocation."
+    },
+    {
+      "id": "expression-conjugation",
+      "tier": "B",
+      "purpose": "expression_conjugation_cross_reference",
+      "path": "日本語表現活用辞典.mdx",
+      "title": "日本語表現活用辞典",
+      "useFields": ["usage_domain", "conjugation_hint"],
+      "doNotPublish": ["raw_definition", "raw_examples"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Secondary expression reference."
+    },
+    {
+      "id": "name-pronunciation",
+      "tier": "B",
+      "purpose": "proper_name_reading_reference",
+      "path": "名称发音大辞典.mdx",
+      "title": "名称发音大辞典",
+      "useFields": ["proper_name_reading"],
+      "doNotPublish": ["raw_definition", "raw_examples"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Only use for names, places, and proper nouns; not core JLPT vocabulary."
+    },
+    {
+      "id": "nihon-kokugo",
+      "tier": "B",
+      "purpose": "advanced_historical_reference",
+      "path": "精選版 日本国語大辞典/精選版 日本国語大辞典.mdx",
+      "title": "精選版 日本国語大辞典",
+      "useFields": ["advanced_sense_keywords", "historical_hint"],
+      "doNotPublish": ["raw_definition", "raw_examples", "article_structure"],
+      "licenseStatus": "internal_reference_only",
+      "notes": "Use sparingly for N1/advanced words; too heavy for daily vocabulary generation."
+    }
+  ],
+  "lowPriority": [
+    {
+      "path": "[4日语新明解国语辞典.mdx",
+      "reason": "Likely older/duplicate Shinmeikai source; prefer smk8."
+    },
+    {
+      "path": "三省堂大辭林日日辭典(Vina網友求的)[379725].mdx",
+      "reason": "Likely duplicate/older Daijirin source; prefer daijirin2."
+    },
+    {
+      "path": "小学馆日本大百科.mdx",
+      "reason": "Encyclopedia content, not efficient for JLPT vocabulary."
+    },
+    {
+      "path": "《英辞郎v86英和辞典》[090412].mdx",
+      "reason": "English-Japanese direction, not first priority for Chinese-facing vocabulary."
+    },
+    {
+      "path": "《英辞郎日英辞典》.mdx",
+      "reason": "Japanese-English direction can be useful later, but JMDict is cleaner as a base lexeme source."
+    },
+    {
+      "path": "[其他语种] ◆日汉27万大辞典【wonthen原创】【版本日期未注明】.mdx",
+      "reason": "Large broad source with unclear provenance; use only for conflict checks."
+    }
+  ]
+}
